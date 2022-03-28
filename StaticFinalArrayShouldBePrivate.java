@@ -2,16 +2,16 @@ package javacodechecker;
 public class StaticFinalArrayShouldBePrivate{
 
     // EMB-ISSUE: CodeIssueNames.STATIC_FINAL_ARRAY_SHOULD_BE_PRIVATE
-    public static final int[] arr={1,2,3,4,5};
+    private static final int[] arr={1,2,3,4,5};
 
     // EMB-ISSUE: CodeIssueNames.STATIC_FINAL_ARRAY_SHOULD_BE_PRIVATE
-    public static final String arr3[]=new String[3];
+    private static final String arr3[]=new String[3];
 
     // EMB-ISSUE: CodeIssueNames.STATIC_FINAL_ARRAY_SHOULD_BE_PRIVATE
-    public static final String arr4[];
+    private static final String arr4[];
 
     // EMB-ISSUE: CodeIssueNames.STATIC_FINAL_ARRAY_SHOULD_BE_PRIVATE
-    public static final String[][] arr7;
+    private static final String[][] arr7;
 
     // EMB-ISSUE: CodeIssueNames.STATIC_FINAL_ARRAY_SHOULD_BE_PRIVATE/no-detect
     private static final int[] arr1={1,2,3};
