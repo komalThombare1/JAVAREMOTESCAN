@@ -5,8 +5,8 @@ public class ComparisionOfObjectReferencesInsteadOfObjectContents {
 	String str2 = new String("Hello");
 	public void compare() {
 		// EMB-ISSUE: CodeIssueNames.COMPARISION_OF_OBJECT_REFRENCE_INSTEAD_OF_OBJECT_CONTENTS
-		if (str1.equals(str2)) {
-			logger.info("str1 equals str2");
+		if (str1 == str2) {
+			logger.info("str1 == str2");
 		}
 		
 		String name = "manasi";
@@ -16,7 +16,7 @@ public class ComparisionOfObjectReferencesInsteadOfObjectContents {
 	
 	
 	public void compareName(String name,String myname) {
-		// EMB-ISSUE: CodeIssueNames.COMPARISION_OF_OBJECT_REFRENCE_INSTEAD_OF_OBJECT_CONTENTS
+		
 		if(name == myname) {
 			logger.info("name == myname");		
 			}
