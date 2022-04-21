@@ -6,7 +6,7 @@ public class PublicMethodReturnPrivateDataStructure {
 	private int[] arr= {1,2,3};
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE
 	public String[] getColor() {
-	return color;
+	return Arrays.copyOf(color);
 	}
 	//EMB-ISSUE: CodeIssueNames.PUBLIC_METHOD_RETURN_PRIVATE_DATA_STRUCTURE
 		public String[] getColorss() {	
