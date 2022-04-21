@@ -6,10 +6,11 @@ import java.util.Random;
 public class AvoidUsingPredictableRandomValues {
     String randommethod(){
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES
-        Random r = new Random();
+        SecureRandom secureRandom = new SecureRandom();
         return Long.toHexString(r.nextLong());
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
-        SecureRandom secureRandom = new SecureRandom();
+        Random r = new Random();
+        
     }
 }
