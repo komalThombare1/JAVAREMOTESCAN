@@ -9,7 +9,7 @@ public class CipherWithNoIntegrity {
 	}
 	public void md1 () {
 		// EMB-ISSUE: CodeIssueNames.CIPHER_WITH_NO_INTEGRITY
-    Cipher c = Cipher.getInstance("DESede/CTR/PKCS5Padding");
+    Cipher c = Cipher.getInstance("AES/GCM/NoPadding");
 	c.init(Cipher.ENCRYPT_MODE, k, iv);
 	byte[] cipherText = c.doFinal(plainText);
 	}
