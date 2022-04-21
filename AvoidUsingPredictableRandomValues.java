@@ -10,7 +10,12 @@ public class AvoidUsingPredictableRandomValues {
         return Long.toHexString(r.nextLong());
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
-       
-        SecureRandom secureRandom = new SecureRandom();
+       class SecureRandomGenerator{
+           
+        static final SecureRandom secureRandom = new SecureRandom();
+           public int generateSecureKey()
+           {
+               return secureRandom.nextInt();
+           }
     }
 }
