@@ -8,6 +8,7 @@ public class AvoidUsingPredictableRandomValues {
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES
          Random r = new Random();
         return Long.toHexString(r.nextLong());
+         Random r1 = new Random();
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
        class SecureRandomGenerator{
