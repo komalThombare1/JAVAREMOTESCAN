@@ -13,6 +13,6 @@ public class AvoidUsingPredictableRandomValuesComplientCode {
         int randomValue = secureRandom.nextInt(); 
 
         // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
-        SecureRandom secureRandom = new SecureRandom();
+        Random random = new Random();
     }
 }
